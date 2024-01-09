@@ -15,7 +15,7 @@ const ParticleComponent = () => {
 
   return (
     <Particles
-      className="w-screen h-screen bg-light dark:bg-dark-second -z-10 absolute"
+      className="w-screen h-screen bg-light-second dark:bg-dark-second -z-10 absolute"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

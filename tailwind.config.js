@@ -7,10 +7,12 @@ export default {
       colors: {
         "dark-first": "#081B29",
         "dark-second": "#06131D",
-        light: "#FFFFFE",
+        "light-first": "#FFFFFE",
+        "light-second": "#D8EEFE",
         secondary: "#3DA9FC",
         headings: "#094067",
-        paragraphs: "5F6C7B",
+        paragraphs: "#5F6C7B",
+        "gray-field": "#EBEBEB",
       },
       fontFamily: {
         montserrat: ["Montserrat", "ui-sans-serif"],
