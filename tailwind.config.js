@@ -13,9 +13,19 @@ export default {
         headings: "#094067",
         paragraphs: "#5F6C7B",
         "gray-field": "#EBEBEB",
+        navbar: "#04243A",
       },
       fontFamily: {
         montserrat: ["Montserrat", "ui-sans-serif"],
+      },
+      animation: {
+        slider: "left 10s linear infinite",
+      },
+      keyframes: {
+        left: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-185%)" },
+        },
       },
     },
   },

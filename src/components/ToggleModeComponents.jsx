@@ -9,7 +9,7 @@ const ToggleModeComponents = ({ toggleMode, darkMode }) => {
     <>
       <div
         onClick={toggleMode}
-        className="w-[75px] h-[30px] bg-gray-field dark:bg-dark-second border border-secondary rounded-full flex items-center justify-between relative cursor-pointer"
+        className="w-[75px] h-[30px] bg-light-second dark:bg-dark-second border border-secondary rounded-full flex items-center justify-between relative cursor-pointer z-20"
       >
         <div
           className={

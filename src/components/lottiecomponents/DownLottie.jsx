@@ -7,7 +7,7 @@ import downlight from "./down-light.json";
 
 const DownLottie = ({ darkMode }) => {
   return (
-    <a className="cursor-pointer" href="#home">
+    <a className="cursor-pointer" href="#Home">
       <Lottie
         animationData={darkMode ? downdark : downlight}
         loop

@@ -5,16 +5,28 @@ import React from "react";
 import ParticleComponent from "./tsparticles/ParticleComponent";
 import ReactTyped from "react-typed";
 import DownLottie from "./lottiecomponents/DownLottie";
+import { motion } from "framer-motion";
 
 const WelcomeComponent = ({ darkMode }) => {
+  const PopUp = {
+    initial: { opacity: 0, scale: 0.3 },
+    animate: { opacity: 1, scale: 1 },
+  };
+
   return (
     <div className="h-screen">
       <ParticleComponent />
       <div className="h-full flex flex-col items-center justify-center gap-24">
         <div className="text-center">
-          <h1 className="text-3xl text-headings dark:text-white font-semibold mb-5">
+          <motion.h1
+            className="text-3xl text-headings dark:text-white font-semibold mb-5"
+            variants={PopUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 1, type: "spring" }}
+          >
             IBRAHIM SAPUTRA
-          </h1>
+          </motion.h1>
           <ReactTyped
             className="text-xl text-secondary  font-normal"
             strings={[
