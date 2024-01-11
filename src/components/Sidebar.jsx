@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
+import { Link, Element, animateScroll as scroll } from "react";
 
 const Sidebar = ({ openSidebar, isSticky }) => {
   const links = ["Home", "About", "Portfolio", "Certification", "Contact"];

@@ -35,6 +35,7 @@ const NavbarComponents = ({
         <ButtonMenu
           buttonMenuClick={buttonMenuClick}
           openSidebar={openSidebar}
+          isSticky={isSticky}
         />
       </div>
     </nav>
