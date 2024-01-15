@@ -14,6 +14,7 @@ export default {
         paragraphs: "#5F6C7B",
         "gray-field": "#EBEBEB",
         navbar: "#04243A",
+        "card-hover": "#081B2970",
       },
       fontFamily: {
         montserrat: ["Montserrat", "ui-sans-serif"],

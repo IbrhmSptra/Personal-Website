@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const ButtonMenu = ({ buttonMenuClick, openSidebar, isSticky }) => {
   const variants = {
