@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import linkIcon from "../assets/img/link-icon.png";
-import githubIcon from "../assets/img/github-icon.png";
+import githubIcon from "../assets/img/Github-iconDark.png";
 import Divider from "./divider";
 
 const Card = ({
@@ -54,9 +54,11 @@ const Card = ({
 
       {/* card hover / click */}
       <div
-        className={`absolute z-10 backdrop-blur-sm bg-card-hover translate-y-full lg:group-hover:translate-y-0 transition-all duration-300 top-0 bottom-0 left-0 right-0 flex justify-center items-center ${
-          cardClicked ? "translate-y-0" : ""
-        }`}
+        className={
+          cardClicked
+            ? "absolute z-10 backdrop-blur-sm bg-card-hover translate-y-0 lg:group-hover:translate-y-0 transition-all duration-300 top-0 bottom-0 left-0 right-0 flex justify-center items-center"
+            : "absolute z-10 backdrop-blur-sm bg-card-hover translate-y-full lg:group-hover:translate-y-0 transition-all duration-300 top-0 bottom-0 left-0 right-0 flex justify-center items-center"
+        }
       >
         {/* Button github */}
         <a href={githubLink} target="_blank" rel="noreferrer">

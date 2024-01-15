@@ -27,6 +27,10 @@ import python from "../src/assets/img/python.png";
 import tailwind from "../src/assets/img/tailwind.png";
 import supabase from "../src/assets/img/supabase.png";
 import scikitlearn from "../src/assets/img/scikitlearn.png";
+import Certificates from "./components/Certificates";
+import ContactComponent from "./components/ContactComponent";
+import Social from "./components/Social";
+import Footer from "./components/FooterComponent";
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -101,7 +105,7 @@ function App() {
         <Element name="Home" className="Home">
           <section
             id="Home"
-            className="container py-16 px-4 pt bg-light-first dark:bg-dark-first"
+            className="container py-16 px-4 bg-light-first dark:bg-dark-first"
           >
             <div className="max-w-[200px] mx-auto">
               <img src={HeroImage} alt="HeroImage" />
@@ -134,7 +138,7 @@ function App() {
         <Element name="About" className="About">
           <section
             id="About"
-            className=" bg-light-second dark:bg-dark-second px-4 py-10"
+            className="container bg-light-second dark:bg-dark-second px-4 py-10"
           >
             <Heading text="About" custom="text-center" />
             <div className="max-w-[168px] m-auto rounded-md overflow-hidden mt-5">
@@ -159,7 +163,7 @@ Based in Jakarta, Indonesia"
         <Element name="Portfolio" className="Portfolio">
           <section
             id="Portfolio"
-            className="bg-light-first dark:bg-dark-first px-4 py-10"
+            className="container bg-light-first dark:bg-dark-first px-4 py-10"
           >
             <Heading text="Portfolio" custom="text-center" />
             <Paragraph
@@ -208,6 +212,43 @@ Based in Jakarta, Indonesia"
             />
           </section>
         </Element>
+
+        {/* Certification */}
+        <Element name="Certification" className="Certification">
+          <section
+            id="Certification"
+            className="container bg-light-second dark:bg-dark-second px-4 py-10"
+          >
+            <Heading text="Certification" custom="text-center" />
+            <Paragraph
+              text="Here are my certifications in the field of Information Technologies and Programming."
+              custom="mt-3 text-center mb-6"
+            />
+            <Certificates />
+          </section>
+        </Element>
+
+        {/* Contact */}
+        <Element name="Contact" className="Contact">
+          <section
+            id="Contact"
+            className="container bg-light-first dark:bg-dark-first px-4 py-10"
+          >
+            <ContactComponent />
+            <Heading
+              text="Or you can reach me via :"
+              custom="text-sm font-medium mt-8"
+            />
+            <Paragraph
+              text="IbrhmSptra@gmail.com | +62 85156127143"
+              custom="font-light mt-4"
+            />
+            <Social darkMode={darkmode} />
+          </section>
+        </Element>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   );

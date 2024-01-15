@@ -12,6 +12,7 @@ import php from "../assets/img/php.png";
 import python from "../assets/img/python.png";
 import react from "../assets/img/react.png";
 import tailwind from "../assets/img/tailwind.png";
+import figma from "../assets/img/figma.png";
 
 const TechSlider = () => {
   const tech = [
@@ -27,29 +28,6 @@ const TechSlider = () => {
     Android,
     python,
   ];
-
-  const Variants = {
-    initial: {
-      x: 0,
-    },
-    animate1: {
-      x: "-320%",
-      transition: {
-        repeat: Infinity,
-        duration: 20,
-        ease: "linear",
-      },
-    },
-    animate2: {
-      x: "-320%",
-      transition: {
-        repeat: Infinity,
-        duration: 20,
-        delay: 20,
-        ease: "linear",
-      },
-    },
-  };
 
   return (
     <div className="w-full overflow-hidden relative whitespace-nowrap max-w-[197px]">
