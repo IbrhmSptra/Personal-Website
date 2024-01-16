@@ -5,7 +5,7 @@ import React from "react";
 const Paragraph = ({ text, custom }) => {
   return (
     <p
-      className={`text-xs font-normal dark:text-white text-paragraphs ${custom}`}
+      className={`text-xs font-normal dark:text-white text-paragraphs md:text-sm ${custom}`}
     >
       {text}
     </p>

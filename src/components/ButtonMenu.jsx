@@ -13,7 +13,7 @@ const ButtonMenu = ({ buttonMenuClick, openSidebar, isSticky }) => {
 
   return (
     <>
-      <a href={!isSticky ? "#Home" : undefined}>
+      <a className="md:hidden" href={!isSticky ? "#Home" : undefined}>
         <div
           onClick={buttonMenuClick}
           className="w-10 h-fit flex flex-col gap-2 p-1 items-end rounded-sm z-20 cursor-pointer"

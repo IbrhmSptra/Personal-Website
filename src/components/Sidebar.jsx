@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Sidebar = ({ openSidebar, isSticky }) => {
   const links = ["Home", "About", "Portfolio", "Certification", "Contact"];
@@ -30,7 +30,7 @@ const Sidebar = ({ openSidebar, isSticky }) => {
         {links.map((link) => (
           <motion.li key={link} variants={variants}>
             <Link
-              className="text-headings dark:text-white"
+              className="text-headings dark:text-white cursor-pointer"
               to={link}
               offset={-50}
             >

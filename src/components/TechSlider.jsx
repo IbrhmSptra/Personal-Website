@@ -54,7 +54,7 @@ const TechSlider = () => {
         ))}
       </div>
 
-      <div className="absolute -right-1 top-0 w-8 h-full bg-gradient-to-l from-light-first dark:from-dark-first to-transparent z-10"></div>
+      <div className="absolute -right-1 top-0 w-8 h-full bg-gradient-to-l from-light-first dark:from-dark-first to-transparent"></div>
     </div>
   );
 };

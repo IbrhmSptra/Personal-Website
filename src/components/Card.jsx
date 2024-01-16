@@ -26,7 +26,8 @@ const Card = ({
   return (
     <div
       onClick={handleclick}
-      className={`" bg-headings dark:bg-dark-first rounded-md border-2 border-secondary overflow-hidden mt-4 relative group ${customCard}`}
+      className={`" bg-headings dark:bg-dark-first rounded-md border-2 border-secondary overflow-hidden mt-4 relative group
+      max-w-[470px] m-auto cursor-pointer sm:m-0 sm:w-[270px] md:w-[330px] ${customCard}`}
     >
       <img
         className={`w-full max-h-[150px] object-cover ${customImg}`}

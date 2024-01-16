@@ -4,7 +4,7 @@
 import React from "react";
 import ParticleComponent from "./tsparticles/ParticleComponent";
 import ReactTyped from "react-typed";
-import DownLottie from "./lottiecomponents/DownLottie";
+import DownLottie from "./lottiecomponents/DownLottie/DownLottie";
 import { motion } from "framer-motion";
 
 const WelcomeComponent = ({ darkMode }) => {

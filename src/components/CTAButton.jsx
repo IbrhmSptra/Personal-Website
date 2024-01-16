@@ -5,7 +5,7 @@ import React from "react";
 const CTAButton = ({ text, custom }) => {
   return (
     <a
-      className={`py-2 px-4 rounded-full border border-headings dark:border-secondary hover:animate-pulse dark:text-secondary text-sm text-headings ${custom}`}
+      className={`py-2 px-4 rounded-full border border-headings dark:border-secondary hover:animate-pulse dark:text-secondary text-sm text-headings cursor-pointer md:px-10 ${custom}`}
     >
       {text}
     </a>
