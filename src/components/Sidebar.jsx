@@ -20,7 +20,7 @@ const Sidebar = ({ openSidebar, isSticky }) => {
 
   return (
     <motion.div
-      className={`bg-slate-100 dark:bg-navbar fixed w-1/2 h-screen right-0 top-0 z-10 ${
+      className={`bg-slate-100 dark:bg-navbar fixed w-1/2 h-screen right-0 top-0 z-20 lg:z-10 ${
         isSticky ? "block" : "hidden"
       }`}
       variants={variants}

@@ -11,31 +11,38 @@ import instagramLight from "../assets/img/Instagram-iconLight.png";
 const Social = ({ darkMode }) => {
   return (
     <div className="flex gap-2 mt-4">
-      <a href="https://github.com/IbrhmSptra" target="_blank" rel="noreferrer">
+      <a
+        className="z-10"
+        href="https://github.com/IbrhmSptra"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
-          className="w-6 h-6"
+          className="w-6 h-6 xl:w-10 xl:h-10"
           src={darkMode ? githubDark : githubLight}
           alt="Github Icon"
         />
       </a>
       <a
+        className="z-10"
         href="https://www.linkedin.com/in/ibrahim-saputra/"
         target="_blank"
         rel="noreferrer"
       >
         <img
-          className="w-6 h-6"
+          className="w-6 h-6 xl:w-10 xl:h-10"
           src={darkMode ? linkedinDark : linkedinLight}
           alt="Github Icon"
         />
       </a>
       <a
+        className="z-10"
         href="https://www.instagram.com/ibrhmsptra/"
         target="_blank"
         rel="noreferrer"
       >
         <img
-          className="w-6 h-6"
+          className="w-6 h-6 xl:w-10 xl:h-10"
           src={darkMode ? instagramDark : instagramLight}
           alt="Github Icon"
         />

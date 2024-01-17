@@ -5,7 +5,7 @@ import React from "react";
 const SubHeading = ({ text, custom }) => {
   return (
     <h2
-      className={`text-sm font-normal text-secondary sm:text-base md:text-lg ${custom}`}
+      className={`text-sm font-normal text-secondary sm:text-base md:text-lg lg:text-2xl ${custom}`}
     >
       {text}
     </h2>

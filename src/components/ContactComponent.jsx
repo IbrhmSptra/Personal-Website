@@ -6,7 +6,7 @@ import { Button } from "react-scroll";
 const ContactComponent = () => {
   return (
     <form action="">
-      <div className="p-5 border-2 border-secondary sm:flex-1">
+      <div className="p-5 border-2 border-secondary sm:flex-1 lg:p-10 lg:w-[500px]">
         <Heading text="Contact Me" />
         <div className="mt-8 space-y-5">
           <div className="space-y-2">

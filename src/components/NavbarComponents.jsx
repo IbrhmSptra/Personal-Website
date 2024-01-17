@@ -25,7 +25,6 @@ const NavbarComponents = ({
   } else if (width >= 768) {
     offset = -40;
   }
-
   return (
     <nav
       ref={reference}
@@ -35,7 +34,7 @@ const NavbarComponents = ({
           : "sticky top-0  bg-light-first dark:bg-dark-first z-40"
       }
     >
-      <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10">
+      <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10 lg:px-12">
         <div>
           <img
             className="h-8"

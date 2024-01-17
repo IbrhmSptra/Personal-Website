@@ -99,12 +99,12 @@ function App() {
         {/* Home Page */}
         <Element name="Home" className="Home">
           <section id="Home" className=" bg-light-first dark:bg-dark-first">
-            <div className="container m-auto pt-16 pb-20 px-4 sm:px-8 md:px-10 md:flex md:pb-32 md:pt-24">
-              <div className="max-w-[200px] mx-auto sm:max-w-[250px] md:order-2 md:flex-1 md:max-w-fit">
+            <div className="container m-auto pt-16 pb-20 px-4 sm:px-8 md:px-10 md:flex md:pb-32 md:pt-24 lg:px-12 lg:gap-10 lg:items-center">
+              <div className="max-w-[200px] mx-auto sm:max-w-[250px] md:order-2 md:flex-1 md:max-w-fit xl:max-w-[400px]">
                 <img src={HeroImage} alt="HeroImage" />
               </div>
 
-              <div className="mt-6 md:max-w-96">
+              <div className="mt-6 md:max-w-96 lg:max-w-[455px] xl:max-w-[600px]">
                 <div>
                   <SubHeading
                     text="Hi, I am"
@@ -133,11 +133,11 @@ function App() {
         {/* About Page */}
         <Element name="About" className="About">
           <section id="About" className=" bg-light-second dark:bg-dark-second ">
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:py-20 md:px-10 md:py-24">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
               <Heading text="About" custom="text-center sm:hidden" />
               <div className="max-w-[168px] m-auto rounded-md overflow-hidden mt-5 sm:max-w-fit sm:mt-0">
                 <img
-                  className="sm:h-[500px] object-cover"
+                  className="sm:h-[500px] object-cover "
                   src={AboutImg}
                   alt="About Image"
                 />
@@ -153,8 +153,8 @@ Based in Jakarta, Indonesia"
                   text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Bootstrap, Tailwind and currently learning more about MERN stack."
                   custom="mt-3"
                 />
-                <div className="mt-8 w-fit m-auto sm:mt-6 md:mt-16">
-                  <CTAButton text="Download CV" custom="px-10" />
+                <div className="mt-8 sm:mt-6 md:mt-16 lg:mt-10 xl:mt-20 text-center lg:text-start">
+                  <CTAButton text="Download CV" />
                 </div>
               </div>
             </div>
@@ -167,13 +167,13 @@ Based in Jakarta, Indonesia"
             id="Portfolio"
             className=" bg-light-first dark:bg-dark-first "
           >
-            <div className="container m-auto px-4 py-10 sm:py-20 sm:px-8 md:px-10 md:py-24">
+            <div className="container m-auto px-4 py-10 sm:py-20 sm:px-8 md:px-10 md:py-24 lg:py-32 lg:px-12">
               <Heading text="Portfolio" custom="text-center" />
               <Paragraph
                 text="Here are a few past projects I've worked on"
                 custom="mt-3 text-center mb-6"
               />
-              <div className="sm:flex sm:flex-wrap sm:gap-5 sm:justify-center">
+              <div className="sm:flex sm:flex-wrap sm:gap-5 sm:justify-center lg:mt-8">
                 <Card
                   name="Suxz"
                   thumbnail={suxz}
@@ -225,7 +225,7 @@ Based in Jakarta, Indonesia"
             id="Certification"
             className=" bg-light-second dark:bg-dark-second "
           >
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 md:px-10 md:py-24">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
               <Heading text="Certification" custom="text-center" />
               <Paragraph
                 text="Here are my certifications in the field of Information Technologies and Programming."
@@ -239,15 +239,15 @@ Based in Jakarta, Indonesia"
         {/* Contact */}
         <Element name="Contact" className="Contact">
           <section id="Contact" className=" bg-light-first dark:bg-dark-first ">
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 sm:flex gap-5 md:px-10 md:py-24">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 sm:flex gap-5 md:px-10 md:py-24 lg:px-12 lg:py-32 lg:justify-center">
               <ContactComponent />
-              <div className="sm:min-w-[250px]">
+              <div className="sm:w-[250px]  lg:w-[400px]">
                 <EmailLottie darkMode={darkmode} />
-                <div className="sm:mt-20">
-                  <h2 className=" dark:text-white text-headings  text-sm font-medium mt-8 sm:text-base">
+                <div className="sm:mt-20 lg:mt-10">
+                  <h2 className=" dark:text-white text-headings  text-sm font-medium mt-8 sm:text-base xl:text-xl">
                     Or you can reach me via :
                   </h2>
-                  <p className="text-xs dark:text-white text-paragraphs font-light mt-4">
+                  <p className="text-xs dark:text-white text-paragraphs font-light mt-4 xl:text-base">
                     IbrhmSptra@gmail.com | +62 85156127143
                   </p>
                 </div>

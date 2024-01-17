@@ -19,7 +19,7 @@ const WelcomeComponent = ({ darkMode }) => {
       <div className="h-full flex flex-col items-center justify-center gap-24">
         <div className="text-center">
           <motion.h1
-            className="text-3xl text-headings dark:text-white font-semibold mb-5"
+            className="text-3xl text-headings dark:text-white font-semibold mb-5 xl:text-5xl"
             variants={PopUp}
             initial="initial"
             animate="animate"
@@ -28,7 +28,7 @@ const WelcomeComponent = ({ darkMode }) => {
             IBRAHIM SAPUTRA
           </motion.h1>
           <ReactTyped
-            className="text-xl text-secondary  font-normal"
+            className="text-xl text-secondary  font-normal xl:text-2xl"
             strings={[
               "Front-End Developer",
               "Android Developer",
