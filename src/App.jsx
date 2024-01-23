@@ -12,11 +12,11 @@ import SubHeading from "./components/SubHeading";
 import Paragraph from "./components/Paragraph";
 import CTAButton from "./components/CTAButton";
 import Card from "./components/Card";
-import aagym from "../src/assets/img/aagym.png";
-import foodo from "../src/assets/img/foodo.png";
-import iconsup from "../src/assets/img/iconsup.png";
-import osom from "../src/assets/img/osom.png";
-import suxz from "../src/assets/img/suxz.png";
+import aagym from "../src/assets/img/aagym.webp";
+import foodo from "../src/assets/img/foodo.webp";
+import iconsup from "../src/assets/img/iconsup.webp";
+import osom from "../src/assets/img/osom.webp";
+import suxz from "../src/assets/img/suxz.webp";
 import Android from "../src/assets/img/android.png";
 import bootstrap from "../src/assets/img/bootstrap.png";
 import codeigniter from "../src/assets/img/codeigniter.png";
@@ -153,8 +153,12 @@ Based in Jakarta, Indonesia"
                   text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Bootstrap, Tailwind and currently learning more about MERN stack."
                   custom="mt-3"
                 />
+
                 <div className="mt-8 sm:mt-6 md:mt-16 lg:mt-10 xl:mt-20 text-center lg:text-start">
-                  <CTAButton text="Download CV" />
+                  <CTAButton
+                    href="/CV_Ibrahim-Saputra.pdf"
+                    text="Download CV"
+                  />
                 </div>
               </div>
             </div>
