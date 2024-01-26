@@ -36,11 +36,13 @@ const NavbarComponents = ({
     >
       <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10 lg:px-12">
         <div>
-          <img
-            className="h-8"
-            src={darkMode ? brandDark : brandLight}
-            alt="brand"
-          />
+          <Link to="Home" offset={offset}>
+            <img
+              className="h-8 cursor-pointer"
+              src={darkMode ? brandDark : brandLight}
+              alt="brand"
+            />
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 md:gap-6">
