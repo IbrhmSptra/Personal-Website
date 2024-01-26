@@ -15,6 +15,9 @@ const Card = ({
   customBody,
   githubLink,
   width,
+  aos,
+  delay,
+  dur,
 }) => {
   const [cardClicked, setCardClicked] = useState(false);
   const handleclick = () => {
@@ -25,6 +28,9 @@ const Card = ({
 
   return (
     <div
+      data-aos={aos}
+      data-aos-delay={delay}
+      data-aos-duration={dur}
       onClick={handleclick}
       className={`" bg-headings dark:bg-dark-first rounded-md border-2 border-secondary overflow-hidden mt-4 relative group lg:z-20
       max-w-[470px] m-auto cursor-pointer sm:m-0 sm:w-[270px] md:w-[330px] lg:w-[400px] xl:w-[345px] ${customCard}`}

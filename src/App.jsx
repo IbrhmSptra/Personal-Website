@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import { Element } from "react-scroll";
 import NavbarComponents from "./components/NavbarComponents";
@@ -32,6 +33,8 @@ import ContactComponent from "./components/ContactComponent";
 import Social from "./components/Social";
 import Footer from "./components/FooterComponent";
 import EmailLottie from "./components/lottiecomponents/EmailLottie/EmailLottie";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [darkmode, setDarkmode] = useState(true);
@@ -64,6 +67,11 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  //aos init
+  useEffect(() => {
+    AOS.init();
   }, []);
 
   function buttonMenuClick() {
@@ -100,19 +108,42 @@ function App() {
         <Element name="Home" className="Home">
           <section id="Home" className=" bg-light-first dark:bg-dark-first">
             <div className="container m-auto pt-16 pb-20 px-4 sm:px-8 md:px-10 md:flex md:pb-32 md:pt-24 lg:px-12 lg:gap-10 lg:items-center">
-              <div className="max-w-[200px] mx-auto sm:max-w-[250px] md:order-2 md:flex-1 md:max-w-fit xl:max-w-[400px]">
+              <div
+                data-aos="fade-left"
+                className="max-w-[200px] mx-auto sm:max-w-[250px] md:order-2 md:flex-1 md:max-w-fit xl:max-w-[400px]"
+              >
                 <img src={HeroImage} alt="HeroImage" />
               </div>
 
-              <div className="mt-6 md:max-w-96 lg:max-w-[455px] xl:max-w-[600px]">
+              <div
+                data-aos="fade-right"
+                className="mt-6 md:max-w-96 lg:max-w-[455px] xl:max-w-[600px]"
+              >
                 <div>
                   <SubHeading
+                    aos="fade-up"
+                    dur="500"
+                    delay="200"
                     text="Hi, I am"
                     custom="text-headings dark:text-white"
                   />
-                  <Heading text="Ibrahim Saputra" custom="font-bold" />
-                  <SubHeading text="Front-End Developer" />
+                  <Heading
+                    aos="fade-up"
+                    dur="500"
+                    delay="300"
+                    text="Ibrahim Saputra"
+                    custom="font-bold"
+                  />
+                  <SubHeading
+                    aos="fade-up"
+                    dur="500"
+                    delay="400"
+                    text="Front-End Developer"
+                  />
                   <Paragraph
+                    aos="fade-up"
+                    dur="500"
+                    delay="500"
                     text="Have experience in Web and Android development and an interest
                 in Machine Learning. Certified as a Programmer by BNSP and LSPUI"
                     custom="mt-2"
@@ -134,22 +165,43 @@ function App() {
         <Element name="About" className="About">
           <section id="About" className=" bg-light-second dark:bg-dark-second ">
             <div className="container m-auto px-4 py-10 sm:px-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
-              <Heading text="About" custom="text-center sm:hidden" />
-              <div className="max-w-[168px] m-auto rounded-md overflow-hidden mt-5 sm:max-w-fit sm:mt-0">
+              <Heading
+                aos="fade-up"
+                dur="500"
+                delay="200"
+                text="About"
+                custom="text-center sm:hidden"
+              />
+              <div
+                data-aos="zoom-in"
+                className="max-w-[168px] m-auto rounded-md overflow-hidden mt-5 sm:max-w-fit sm:mt-0"
+              >
                 <img
                   className="sm:h-[500px] object-cover "
                   src={AboutImg}
                   alt="About Image"
                 />
               </div>
-              <div>
-                <Heading text="About" custom="hidden sm:block " />
+              <div data-aos="fade-left" data-aos-duration="500">
+                <Heading
+                  aos="fade-up"
+                  dur="500"
+                  delay="200"
+                  text="About"
+                  custom="hidden sm:block "
+                />
                 <SubHeading
+                  aos="fade-up"
+                  dur="500"
+                  delay="300"
                   text="A Dedicated Front-End Developer
 Based in Jakarta, Indonesia"
                   custom="mt-7 sm:mt-3"
                 />
                 <Paragraph
+                  aos="fade-up"
+                  dur="500"
+                  delay="400"
                   text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Bootstrap, Tailwind and currently learning more about MERN stack."
                   custom="mt-3"
                 />
@@ -172,13 +224,22 @@ Based in Jakarta, Indonesia"
             className=" bg-light-first dark:bg-dark-first "
           >
             <div className="container m-auto px-4 py-10 sm:py-20 sm:px-8 md:px-10 md:py-24 lg:py-32 lg:px-12">
-              <Heading text="Portfolio" custom="text-center" />
+              <Heading
+                aos="fade-up"
+                dur="500"
+                text="Portfolio"
+                custom="text-center"
+              />
               <Paragraph
+                aos="fade-up"
+                dur="500"
                 text="Here are a few past projects I've worked on"
                 custom="mt-3 text-center mb-6"
               />
               <div className="sm:flex sm:flex-wrap sm:gap-5 sm:justify-center lg:mt-8">
                 <Card
+                  aos="zoom-out-up"
+                  delay="200"
                   name="Suxz"
                   thumbnail={suxz}
                   tech={techSuxz}
@@ -187,6 +248,8 @@ Based in Jakarta, Indonesia"
                   githubLink="https://github.com/IbrhmSptra/Suxz"
                 />
                 <Card
+                  aos="zoom-out-up"
+                  delay="200"
                   name="Osom"
                   thumbnail={osom}
                   tech={techOsom}
@@ -195,6 +258,8 @@ Based in Jakarta, Indonesia"
                   githubLink="https://github.com/IbrhmSptra/Osom"
                 />
                 <Card
+                  aos="zoom-out-up"
+                  delay="200"
                   name="IconSup"
                   thumbnail={iconsup}
                   tech={techIconsup}
@@ -203,6 +268,8 @@ Based in Jakarta, Indonesia"
                   githubLink="https://github.com/IbrhmSptra/IconSup"
                 />
                 <Card
+                  aos="zoom-out-up"
+                  delay="200"
                   name="AAGYM"
                   thumbnail={aagym}
                   tech={techAagym}
@@ -211,6 +278,8 @@ Based in Jakarta, Indonesia"
                   githubLink="https://github.com/IbrhmSptra/AAGym"
                 />
                 <Card
+                  aos="zoom-out-up"
+                  delay="200"
                   name="Foodo"
                   thumbnail={foodo}
                   tech={techFoodo}
@@ -230,8 +299,15 @@ Based in Jakarta, Indonesia"
             className=" bg-light-second dark:bg-dark-second "
           >
             <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
-              <Heading text="Certification" custom="text-center" />
+              <Heading
+                aos="fade-up"
+                dur="500"
+                text="Certification"
+                custom="text-center"
+              />
               <Paragraph
+                aos="fade-up"
+                dur="500"
                 text="Here are my certifications in the field of Information Technologies and Programming."
                 custom="mt-3 text-center mb-6"
               />
