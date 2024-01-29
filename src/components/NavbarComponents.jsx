@@ -28,11 +28,11 @@ const NavbarComponents = ({
   return (
     <nav
       ref={reference}
-      className={
+      className={`sticky top-0 ${
         isSticky
-          ? "sticky top-0 bg-slate-100 dark:bg-navbar z-40"
-          : "sticky top-0  bg-light-first dark:bg-dark-first z-40"
-      }
+          ? " bg-slate-100 dark:bg-navbar z-40"
+          : " bg-light-first dark:bg-dark-first z-40"
+      }`}
     >
       <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10 lg:px-12 xl:px-40">
         <div>

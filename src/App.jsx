@@ -90,9 +90,9 @@ function App() {
   const techFoodo = [kotlin, Android, supabase];
 
   return (
-    <div ref={body} className="font-montserrat overflow-x-hidden">
+    <div ref={body} className="font-montserrat ">
       <WelcomeComponent darkMode={darkmode} />
-      <div className="relative overflow-x-hidden">
+      <div className="relative">
         <NavbarComponents
           toggleMode={toggleMode}
           darkMode={darkmode}
