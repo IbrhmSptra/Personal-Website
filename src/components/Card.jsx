@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import linkIcon from "../assets/img/link-icon.png";
 import githubIcon from "../assets/img/Github-iconDark.png";
-import Divider from "./divider";
+import Divider from "./Divider";
 
 const Card = ({
   thumbnail,

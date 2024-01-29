@@ -5,7 +5,7 @@ import NavbarComponents from "./components/NavbarComponents";
 import WelcomeComponent from "./components/WelcomeComponent";
 import Sidebar from "./components/Sidebar";
 import HeroImage from "./assets/img/hero-img.png";
-import Divider from "./components/divider";
+import Divider from "./components/Divider";
 import TechSlider from "./components/TechSlider";
 import AboutImg from "./assets/img/about.png";
 import Heading from "./components/Heading";
