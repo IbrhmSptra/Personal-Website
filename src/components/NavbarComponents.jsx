@@ -26,6 +26,7 @@ const NavbarComponents = ({
   }
   return (
     <>
+      {/* Dummy navbar to fill homepage */}
       <div className={isSticky ? "block" : "hidden"}>
         <nav
           className={
@@ -72,6 +73,7 @@ const NavbarComponents = ({
           </div>
         </nav>
       </div>
+      {/* end of Dummy navbar to fill homepage */}
       <nav
         className={
           isSticky
