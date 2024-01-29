@@ -33,10 +33,10 @@ const Card = ({
       data-aos-duration={dur}
       onClick={handleclick}
       className={`" bg-headings dark:bg-dark-first rounded-md border-2 border-secondary overflow-hidden mt-4 relative group lg:z-20
-      max-w-[470px] m-auto cursor-pointer sm:m-0 sm:w-[270px] md:w-[330px] lg:w-[400px] xl:w-[345px] ${customCard}`}
+      max-w-[470px] m-auto cursor-pointer sm:m-0 sm:w-[270px] md:w-[330px] lg:w-[400px] xl:w-[305px] ${customCard}`}
     >
       <img
-        className={`w-full max-h-[150px] lg:max-h-fit lg:h-[200px] object-cover ${customImg}`}
+        className={`w-full max-h-[150px] lg:max-h-fit lg:h-[200px] xl:max-h-[150px] object-cover ${customImg}`}
         src={thumbnail}
         alt="Thumbnail Porto"
       />

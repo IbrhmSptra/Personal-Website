@@ -107,7 +107,7 @@ function App() {
         {/* Home Page */}
         <Element name="Home" className="Home">
           <section id="Home" className=" bg-light-first dark:bg-dark-first">
-            <div className="container m-auto pt-16 pb-20 px-4 sm:px-8 md:px-10 md:flex md:pb-32 md:pt-24 lg:px-12 lg:gap-10 lg:items-center">
+            <div className="container m-auto pt-16 pb-20 px-4 sm:px-8 md:px-10 md:flex md:pb-32 md:pt-24 lg:justify-center lg:px-12 lg:gap-10 lg:items-center xl:px-40">
               <div
                 data-aos="fade-left"
                 className="max-w-[200px] mx-auto sm:max-w-[250px] md:order-2 md:flex-1 md:max-w-fit xl:max-w-[400px]"
@@ -164,7 +164,7 @@ function App() {
         {/* About Page */}
         <Element name="About" className="About">
           <section id="About" className=" bg-light-second dark:bg-dark-second ">
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32 xl:px-40">
               <Heading
                 aos="fade-up"
                 dur="500"
@@ -223,7 +223,7 @@ Based in Jakarta, Indonesia"
             id="Portfolio"
             className=" bg-light-first dark:bg-dark-first "
           >
-            <div className="container m-auto px-4 py-10 sm:py-20 sm:px-8 md:px-10 md:py-24 lg:py-32 lg:px-12">
+            <div className="container m-auto px-4 py-10 sm:py-20 sm:px-8 md:px-10 md:py-24 lg:py-32 lg:px-12 xl:px-40">
               <Heading
                 aos="fade-up"
                 dur="500"
@@ -298,7 +298,7 @@ Based in Jakarta, Indonesia"
             id="Certification"
             className=" bg-light-second dark:bg-dark-second "
           >
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 md:px-10 md:py-24 lg:px-12 lg:py-32 xl:px-40">
               <Heading
                 aos="fade-up"
                 dur="500"
@@ -319,7 +319,7 @@ Based in Jakarta, Indonesia"
         {/* Contact */}
         <Element name="Contact" className="Contact">
           <section id="Contact" className=" bg-light-first dark:bg-dark-first ">
-            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 sm:flex gap-5 md:px-10 md:py-24 lg:px-12 lg:py-32 lg:justify-center">
+            <div className="container m-auto px-4 py-10 sm:px-8 sm:py-20 sm:flex gap-5 md:px-10 md:py-24 lg:px-12 lg:py-32 lg:justify-center xl:px-40">
               <ContactComponent />
               <div className="sm:w-[250px]  lg:w-[400px]">
                 <EmailLottie darkMode={darkmode} />

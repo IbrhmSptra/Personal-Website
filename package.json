@@ -20,6 +20,7 @@
     "react-toastify": "^10.0.4",
     "react-tsparticles": "^2.0.6",
     "react-typed": "^1.2.0",
+    "tailwind-scrollbar": "^3.0.5",
     "tsparticles": "^2.0.6"
   },
   "devDependencies": {

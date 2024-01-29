@@ -34,7 +34,7 @@ const NavbarComponents = ({
           : "sticky top-0  bg-light-first dark:bg-dark-first z-40"
       }
     >
-      <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10 lg:px-12">
+      <div className="container m-auto p-4 flex justify-between items-center  sm:px-8 md:px-10 lg:px-12 xl:px-40">
         <div>
           <Link to="Home" offset={offset}>
             <img
