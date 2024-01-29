@@ -51,7 +51,6 @@ function App() {
     if (stickyRef.current) {
       const rect = stickyRef.current.getBoundingClientRect();
       const isElementSticky = rect.top <= 0;
-
       setIsSticky(isElementSticky);
     }
   };
@@ -90,15 +89,14 @@ function App() {
   const techFoodo = [kotlin, Android, supabase];
 
   return (
-    <div ref={body} className="font-montserrat ">
+    <div ref={body} className="font-montserrat overflow-x-hidden">
       <WelcomeComponent darkMode={darkmode} />
-      <div className="relative">
+      <div ref={stickyRef} className="relative">
         <NavbarComponents
           toggleMode={toggleMode}
           darkMode={darkmode}
           buttonMenuClick={buttonMenuClick}
           openSidebar={openSidebar}
-          reference={stickyRef}
           isSticky={isSticky}
           width={width}
         />
