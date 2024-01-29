@@ -11,7 +11,7 @@ import AboutImg from "./assets/img/about.png";
 import Heading from "./components/Heading";
 import SubHeading from "./components/SubHeading";
 import Paragraph from "./components/Paragraph";
-import CTAButton from "./components/CTAButton";
+// import CTAButton from "./components/CTAButton";
 import Card from "./components/Card";
 import aagym from "../src/assets/img/aagym.webp";
 import foodo from "../src/assets/img/foodo.webp";
@@ -206,12 +206,12 @@ Based in Jakarta, Indonesia"
                   custom="mt-3"
                 />
 
-                <div className="mt-8 sm:mt-6 md:mt-16 lg:mt-10 xl:mt-20 text-center lg:text-start">
+                {/* <div className="mt-8 sm:mt-6 md:mt-16 lg:mt-10 xl:mt-20 text-center lg:text-start">
                   <CTAButton
                     href="/CV_Ibrahim-Saputra.pdf"
                     text="Download CV"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
