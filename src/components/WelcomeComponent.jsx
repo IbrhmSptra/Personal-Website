@@ -14,7 +14,7 @@ const WelcomeComponent = ({ darkMode }) => {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen overflow-x-hidden">
       <ParticleComponent darkMode={darkMode} />
       <div className="h-full flex flex-col items-center justify-center gap-24">
         <div className="text-center">
