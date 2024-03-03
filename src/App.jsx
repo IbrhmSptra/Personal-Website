@@ -33,6 +33,10 @@ import ContactComponent from "./components/ContactComponent";
 import Social from "./components/Social";
 import Footer from "./components/FooterComponent";
 import EmailLottie from "./components/lottiecomponents/EmailLottie/EmailLottie";
+import redux from "./assets/img/redux.png";
+import firebase from "./assets/img/firebase.png";
+import uwatch from "./assets/img/uwatch.png";
+import react from "./assets/img/react.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -87,6 +91,7 @@ function App() {
   const techIconsup = [codeigniter, python, scikitlearn];
   const techAagym = [html, javascript, bootstrap, codeigniter];
   const techFoodo = [kotlin, Android, supabase];
+  const techUWatch = [react, redux, tailwind, firebase];
 
   return (
     <div ref={body} className="font-montserrat overflow-x-hidden">
@@ -235,6 +240,17 @@ Based in Jakarta, Indonesia"
                 custom="mt-3 text-center mb-6"
               />
               <div className="sm:flex sm:flex-wrap sm:gap-5 sm:justify-center lg:mt-8">
+                <Card
+                  aos="zoom-out-up"
+                  delay="200"
+                  name="UWatch"
+                  thumbnail={uwatch}
+                  tech={techUWatch}
+                  paragraph="UWatch is a website movie with TMDB API for users to create their own watchlist"
+                  width={width}
+                  githubLink="https://github.com/IbrhmSptra/UWatch"
+                />
+
                 <Card
                   aos="zoom-out-up"
                   delay="200"
