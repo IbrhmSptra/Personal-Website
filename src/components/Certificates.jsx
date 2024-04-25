@@ -8,6 +8,7 @@ import CFCC from "../assets/img/c-FCC.png";
 import CIconplus from "../assets/img/c-Iconplus.png";
 import CRevou from "../assets/img/c-Revou.png";
 import CUX from "../assets/img/c-UX.png";
+import Niit from "../assets/img/NIIT-Cert.jpg";
 
 const Certificates = () => {
   return (
@@ -34,44 +35,50 @@ const Certificates = () => {
           src={CFCC}
           alt="Sertif-FCC"
         />
-
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
-          className="h-full w-full object-cover lg:hidden"
+          className="h-full w-full object-cover"
+          src={Niit}
+          alt="Sertif-NIIT"
+        />
+        <img
+          data-aos="zoom-out-up"
+          data-aos-delay="200"
+          className="h-full w-full object-cover"
           src={CAlumni}
           alt="Sertif-Alumni"
         />
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
-          className="h-full w-full object-cover lg:hidden"
+          className="h-full w-full object-cover "
           src={CAndroid}
           alt="Sertif-Android"
         />
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
-          className="h-full w-full object-cover lg:hidden"
+          className="h-full w-full object-cover "
           src={CUX}
           alt="Sertif-UX"
         />
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
-          className="h-full w-full object-cover lg:hidden"
+          className="h-full w-full object-cover "
           src={CRevou}
           alt="Sertif-Revou"
         />
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
-          className="h-full w-full object-cover sm:col-span-2 lg:col-span-1 lg:hidden"
+          className="h-full w-full object-cover "
           src={CIconplus}
           alt="Sertif-Iconplus"
         />
       </div>
-      <div className="hidden lg:grid grid-cols-3 gap-5 mt-5">
+      {/* <div className="hidden lg:grid grid-cols-3 gap-5 mt-5">
         <img
           data-aos="zoom-out-up"
           data-aos-delay="200"
@@ -109,7 +116,7 @@ const Certificates = () => {
           src={CIconplus}
           alt="Sertif-Iconplus"
         />
-      </div>
+      </div> */}
     </>
   );
 };

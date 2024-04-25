@@ -26,7 +26,7 @@ export default {
       keyframes: {
         left: {
           "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-185%)" },
+          "100%": { transform: "translateX(-187%)" },
         },
       },
     },

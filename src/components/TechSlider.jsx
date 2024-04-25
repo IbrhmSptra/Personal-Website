@@ -13,20 +13,22 @@ import python from "../assets/img/python.png";
 import react from "../assets/img/react.png";
 import tailwind from "../assets/img/tailwind.png";
 import figma from "../assets/img/figma.png";
+import nodeicon from "../assets/img/node.png";
 
 const TechSlider = () => {
   const tech = [
-    html,
     css,
     javascript,
     bootstrap,
     tailwind,
     react,
+    nodeicon,
     php,
     codeigniter,
     kotlin,
     Android,
     python,
+    figma,
   ];
 
   return (
@@ -43,7 +45,7 @@ const TechSlider = () => {
           />
         ))}
       </div>
-      <div className="whitespace-nowrap inline-block animate-slider ml-[300px]">
+      <div className="whitespace-nowrap inline-block animate-slider ml-[335px]">
         {tech.map((value, i) => (
           <img
             className="h-[25px] mx-4 inline-block"
