@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import CAlumni from "../assets/img/c-Alumni.png";
-import CAndroid from "../assets/img/c-Android.png";
-import CBNSP from "../assets/img/c-BNSP.png";
-import CCCIT from "../assets/img/c-CCIT.png";
-import CFCC from "../assets/img/c-FCC.png";
-import CIconplus from "../assets/img/c-Iconplus.png";
-import CRevou from "../assets/img/c-Revou.png";
-import CUX from "../assets/img/c-UX.png";
-import Niit from "../assets/img/NIIT-Cert.jpg";
+import CAlumni from "../assets/img/certificate/c-Alumni.png";
+import CAndroid from "../assets/img/certificate/c-Android.png";
+import CBNSP from "../assets/img/certificate/c-BNSP.png";
+import CCCIT from "../assets/img/certificate/c-CCIT.png";
+import CFCC from "../assets/img/certificate/c-FCC.png";
+import CIconplus from "../assets/img/certificate/c-Iconplus.png";
+import CRevou from "../assets/img/certificate/c-Revou.png";
+import CUX from "../assets/img/certificate/c-UX.png";
+import Niit from "../assets/img/certificate/NIIT-Cert.jpg";
 
 const Certificates = () => {
   return (

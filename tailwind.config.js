@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -21,12 +22,12 @@ export default {
         montserrat: ["Montserrat", "ui-sans-serif"],
       },
       animation: {
-        slider: "left 10s linear infinite",
+        "loop-scroll": "loop-scroll 10s linear infinite",
       },
       keyframes: {
-        left: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-187%)" },
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-299%)" },
         },
       },
     },

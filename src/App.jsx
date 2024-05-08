@@ -13,30 +13,39 @@ import SubHeading from "./components/SubHeading";
 import Paragraph from "./components/Paragraph";
 // import CTAButton from "./components/CTAButton";
 import Card from "./components/Card";
-import aagym from "../src/assets/img/aagym.webp";
-import foodo from "../src/assets/img/foodo.webp";
-import iconsup from "../src/assets/img/iconsup.webp";
-import osom from "../src/assets/img/osom.webp";
-import suxz from "../src/assets/img/suxz.webp";
-import Android from "../src/assets/img/android.png";
-import bootstrap from "../src/assets/img/bootstrap.png";
-import codeigniter from "../src/assets/img/codeigniter.png";
-import html from "../src/assets/img/html.png";
-import javascript from "../src/assets/img/javascript.png";
-import kotlin from "../src/assets/img/kotlin.png";
-import python from "../src/assets/img/python.png";
-import tailwind from "../src/assets/img/tailwind.png";
-import supabase from "../src/assets/img/supabase.png";
-import scikitlearn from "../src/assets/img/scikitlearn.png";
 import Certificates from "./components/Certificates";
 import ContactComponent from "./components/ContactComponent";
 import Social from "./components/Social";
 import Footer from "./components/FooterComponent";
 import EmailLottie from "./components/lottiecomponents/EmailLottie/EmailLottie";
-import redux from "./assets/img/redux.png";
-import firebase from "./assets/img/firebase.png";
-import uwatch from "./assets/img/uwatch.png";
-import react from "./assets/img/react.png";
+
+import aagym from "../src/assets/img/project/aagym.webp";
+import foodo from "../src/assets/img/project/foodo.webp";
+import iconsup from "../src/assets/img/project/iconsup.webp";
+import osom from "../src/assets/img/project/osom.webp";
+import suxz from "../src/assets/img/project/suxz.webp";
+import uwatch from "./assets/img/project/uwatch.png";
+import eisenmatrix from "./assets/img/project/eisenmatrix.png";
+import foodobackend from "./assets/img/project/foodo-backend.png";
+
+import Android from "../src/assets/img/tech-logo/android.png";
+import bootstrap from "../src/assets/img/tech-logo/bootstrap.png";
+import codeigniter from "../src/assets/img/tech-logo/codeigniter.png";
+import html from "../src/assets/img/tech-logo/html.png";
+import javascript from "../src/assets/img/tech-logo/javascript.png";
+import kotlin from "../src/assets/img/tech-logo/kotlin.png";
+import python from "../src/assets/img/tech-logo/python.png";
+import tailwind from "../src/assets/img/tech-logo/tailwind.png";
+import supabase from "../src/assets/img/tech-logo/supabase.png";
+import scikitlearn from "../src/assets/img/tech-logo/scikitlearn.png";
+import redux from "./assets/img/tech-logo/redux.png";
+import firebase from "./assets/img/tech-logo/firebase.png";
+import react from "./assets/img/tech-logo/react.png";
+import typescript from "./assets/img/tech-logo/typescript.png";
+import nodeicon from "./assets/img/tech-logo/node.png";
+import express from "./assets/img/tech-logo/express.png";
+import prisma from "./assets/img/tech-logo/prisma.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -92,6 +101,8 @@ function App() {
   const techAagym = [html, javascript, bootstrap, codeigniter];
   const techFoodo = [kotlin, Android, supabase];
   const techUWatch = [react, redux, tailwind, firebase];
+  const techEisenMatrix = [typescript, react, redux];
+  const techWebFoodoBackend = [nodeicon, express, prisma];
 
   return (
     <div ref={body} className="font-montserrat overflow-x-hidden">
@@ -240,6 +251,26 @@ Based in Jakarta, Indonesia"
                 custom="mt-3 text-center mb-6"
               />
               <div className="sm:flex sm:flex-wrap sm:gap-5 sm:justify-center lg:mt-8">
+                <Card
+                  aos="zoom-out-up"
+                  delay="200"
+                  name="Foodo API"
+                  thumbnail={foodobackend}
+                  tech={techWebFoodoBackend}
+                  paragraph="Backend API for foodo website"
+                  width={width}
+                  githubLink="https://github.com/IbrhmSptra/FoodoWeb-Backend"
+                />
+                <Card
+                  aos="zoom-out-up"
+                  delay="200"
+                  name="EisenMatrix"
+                  thumbnail={eisenmatrix}
+                  tech={techEisenMatrix}
+                  paragraph="Todo list website with Eisenhower Matrix with drag and drop. Using redux-persist to keep data"
+                  width={width}
+                  githubLink="https://github.com/IbrhmSptra/EisenMatrix"
+                />
                 <Card
                   aos="zoom-out-up"
                   delay="200"

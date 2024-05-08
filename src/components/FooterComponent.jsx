@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import reactIcon from "../assets/img/react.png";
-import tailwindIcon from "../assets/img/tailwind.png";
-import figma from "../assets/img/figma.png";
+import reactIcon from "../assets/img/tech-logo/react.png";
+import tailwindIcon from "../assets/img/tech-logo/tailwind.png";
+import figma from "../assets/img/tech-logo/figma.png";
 
 const footer = () => {
   return (

@@ -1,28 +1,33 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { motion } from "framer-motion";
-import Android from "../assets/img/android.png";
-import bootstrap from "../assets/img/bootstrap.png";
-import codeigniter from "../assets/img/codeigniter.png";
-import css from "../assets/img/css.png";
-import html from "../assets/img/html.png";
-import javascript from "../assets/img/javascript.png";
-import kotlin from "../assets/img/kotlin.png";
-import php from "../assets/img/php.png";
-import python from "../assets/img/python.png";
-import react from "../assets/img/react.png";
-import tailwind from "../assets/img/tailwind.png";
-import figma from "../assets/img/figma.png";
-import nodeicon from "../assets/img/node.png";
+import Android from "../assets/img/tech-logo/android.png";
+import bootstrap from "../assets/img/tech-logo/bootstrap.png";
+import codeigniter from "../assets/img/tech-logo/codeigniter.png";
+import css from "../assets/img/tech-logo/css.png";
+import html from "../assets/img/tech-logo/html.png";
+import javascript from "../assets/img/tech-logo/javascript.png";
+import kotlin from "../assets/img/tech-logo/kotlin.png";
+import php from "../assets/img/tech-logo/php.png";
+import python from "../assets/img/tech-logo/python.png";
+import react from "../assets/img/tech-logo/react.png";
+import tailwind from "../assets/img/tech-logo/tailwind.png";
+import figma from "../assets/img/tech-logo/figma.png";
+import nodeicon from "../assets/img/tech-logo/node.png";
+import typescript from "../assets/img/tech-logo/typescript.png";
+import express from "../assets/img/tech-logo/express.png";
+import prisma from "../assets/img/tech-logo/prisma.png";
 
 const TechSlider = () => {
   const tech = [
     css,
     javascript,
+    typescript,
     bootstrap,
     tailwind,
     react,
     nodeicon,
+    express,
+    prisma,
     php,
     codeigniter,
     kotlin,
@@ -32,30 +37,23 @@ const TechSlider = () => {
   ];
 
   return (
-    <div className="w-full overflow-hidden relative whitespace-nowrap max-w-[197px]">
+    <div className="w-full overflow-hidden relative max-w-[197px]">
       <div className="absolute -left-1 top-0 w-8 h-full bg-gradient-to-r from-light-first dark:from-dark-first to-transparent z-10"></div>
-
-      <div className="whitespace-nowrap inline-block animate-slider">
-        {tech.map((value, i) => (
-          <img
-            className="h-[25px] mx-4 inline-block"
-            key={i}
-            src={value}
-            alt={value}
-          />
-        ))}
+      <div className="flex overflow-hidden">
+        <div className="flex space-x-4 animate-loop-scroll">
+          {tech.map((val, i) => (
+            <img className="h-[25px]" src={val} alt="Icon logo" key={i} />
+          ))}
+        </div>
+        <div
+          className="flex ml-[446px] space-x-4 animate-loop-scroll"
+          aria-hidden="true"
+        >
+          {tech.map((val, i) => (
+            <img className="h-[25px]" src={val} alt="Icon logo" key={i} />
+          ))}
+        </div>
       </div>
-      <div className="whitespace-nowrap inline-block animate-slider ml-[335px]">
-        {tech.map((value, i) => (
-          <img
-            className="h-[25px] mx-4 inline-block"
-            key={i}
-            src={value}
-            alt={value}
-          />
-        ))}
-      </div>
-
       <div className="absolute -right-1 top-0 w-8 h-full bg-gradient-to-l from-light-first dark:from-dark-first to-transparent"></div>
     </div>
   );
