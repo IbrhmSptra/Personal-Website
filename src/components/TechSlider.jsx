@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect } from "react";
 import Android from "../assets/img/tech-logo/android.png";
 import bootstrap from "../assets/img/tech-logo/bootstrap.png";
 import codeigniter from "../assets/img/tech-logo/codeigniter.png";
@@ -14,11 +15,14 @@ import tailwind from "../assets/img/tech-logo/tailwind.png";
 import figma from "../assets/img/tech-logo/figma.png";
 import nodeicon from "../assets/img/tech-logo/node.png";
 import typescript from "../assets/img/tech-logo/typescript.png";
-import express from "../assets/img/tech-logo/express.png";
-import prisma from "../assets/img/tech-logo/prisma.png";
-import next from "../assets/img/tech-logo/next.png";
+import expressDark from "../assets/img/tech-logo/dark-light/expressdark.png";
+import expressLight from "../assets/img/tech-logo/dark-light/expresslight.png";
+import prismaLight from "../assets/img/tech-logo/dark-light/prismalight.png";
+import prismaDark from "../assets/img/tech-logo/dark-light/prismadark.png";
+import nextDark from "../assets/img/tech-logo/dark-light/nextdark.png";
+import nextLight from "../assets/img/tech-logo/dark-light/nextlight.png";
 
-const TechSlider = () => {
+const TechSlider = ({ darkMode }) => {
   const tech = [
     css,
     javascript,
@@ -27,9 +31,9 @@ const TechSlider = () => {
     tailwind,
     react,
     nodeicon,
-    express,
-    prisma,
-    next,
+    darkMode ? expressDark : expressLight,
+    darkMode ? prismaDark : prismaLight,
+    darkMode ? nextDark : nextLight,
     php,
     codeigniter,
     kotlin,
@@ -48,7 +52,7 @@ const TechSlider = () => {
           ))}
         </div>
         <div
-          className="flex ml-[475px] space-x-4 animate-loop-scroll"
+          className="flex ml-[450px] space-x-4 animate-loop-scroll"
           aria-hidden="true"
         >
           {tech.map((val, i) => (

@@ -43,8 +43,8 @@ import firebase from "./assets/img/tech-logo/firebase.png";
 import react from "./assets/img/tech-logo/react.png";
 import typescript from "./assets/img/tech-logo/typescript.png";
 import nodeicon from "./assets/img/tech-logo/node.png";
-import express from "./assets/img/tech-logo/express.png";
-import prisma from "./assets/img/tech-logo/prisma.png";
+import expressDark from "./assets/img/tech-logo/dark-light/expressdark.png";
+import prismaDark from "./assets/img/tech-logo/dark-light/prismadark.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -102,7 +102,7 @@ function App() {
   const techFoodo = [kotlin, Android, supabase];
   const techUWatch = [react, redux, tailwind, firebase];
   const techEisenMatrix = [typescript, react, redux];
-  const techWebFoodoBackend = [nodeicon, express, prisma];
+  const techWebFoodoBackend = [nodeicon, expressDark, prismaDark];
 
   return (
     <div ref={body} className="font-montserrat overflow-x-hidden">
@@ -168,7 +168,7 @@ function App() {
                     Tech Stack
                   </h2>
                   <Divider />
-                  <TechSlider />
+                  <TechSlider darkMode={darkmode} />
                 </div>
               </div>
             </div>
