@@ -216,7 +216,7 @@ Based in Jakarta, Indonesia"
                   aos="fade-up"
                   dur="500"
                   delay="400"
-                  text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Bootstrap, Tailwind and currently learning more about MERN stack."
+                  text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Graduated from Harisenin Full-Stack Developer Bootcamp. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Tailwind, React, Redux, Nextjs, Figma and and also fundamental of backend."
                   custom="mt-3"
                 />
 

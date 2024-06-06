@@ -16,6 +16,7 @@ import nodeicon from "../assets/img/tech-logo/node.png";
 import typescript from "../assets/img/tech-logo/typescript.png";
 import express from "../assets/img/tech-logo/express.png";
 import prisma from "../assets/img/tech-logo/prisma.png";
+import next from "../assets/img/tech-logo/next.png";
 
 const TechSlider = () => {
   const tech = [
@@ -28,6 +29,7 @@ const TechSlider = () => {
     nodeicon,
     express,
     prisma,
+    next,
     php,
     codeigniter,
     kotlin,
@@ -46,7 +48,7 @@ const TechSlider = () => {
           ))}
         </div>
         <div
-          className="flex ml-[446px] space-x-4 animate-loop-scroll"
+          className="flex ml-[475px] space-x-4 animate-loop-scroll"
           aria-hidden="true"
         >
           {tech.map((val, i) => (
