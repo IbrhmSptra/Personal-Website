@@ -26,7 +26,12 @@ import osom from "../src/assets/img/project/osom.webp";
 import suxz from "../src/assets/img/project/suxz.webp";
 import uwatch from "./assets/img/project/uwatch.png";
 import eisenmatrix from "./assets/img/project/eisenmatrix.png";
-import foodobackend from "./assets/img/project/foodo-backend.png";
+import foodoweb from "./assets/img/project/foodo-web.png";
+
+//timeline
+import harisenin from "./assets/img/Harisenin.png";
+import ui from "./assets/img/Ui.png";
+import iconplus from "./assets/img/IconPlus.png";
 
 import Android from "../src/assets/img/tech-logo/android.png";
 import bootstrap from "../src/assets/img/tech-logo/bootstrap.png";
@@ -102,7 +107,7 @@ function App() {
   const techFoodo = [kotlin, Android, supabase];
   const techUWatch = [react, redux, tailwind, firebase];
   const techEisenMatrix = [typescript, react, redux];
-  const techWebFoodoBackend = [nodeicon, expressDark, prismaDark];
+  const techWebFoodo = [react, nodeicon, expressDark, prismaDark];
 
   return (
     <div ref={body} className="font-montserrat overflow-x-hidden">
@@ -217,7 +222,7 @@ Based in Jakarta, Indonesia"
                   dur="500"
                   delay="400"
                   text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Graduated from Harisenin Full-Stack Developer Bootcamp. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Tailwind, React, Redux, Nextjs, Figma and and also fundamental of backend."
-                  custom="mt-3"
+                  custom="mt-3 sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose"
                 />
 
                 {/* <div className="mt-8 sm:mt-6 md:mt-16 lg:mt-10 xl:mt-20 text-center lg:text-start">
@@ -227,6 +232,139 @@ Based in Jakarta, Indonesia"
                   />
                 </div> */}
               </div>
+            </div>
+            <div className="container m-auto px-10 pb-10 sm:px-12 sm:pb-20 md:px-16 md:pb-24 lg:px-16 lg:pb-32 xl:px-48">
+              <ol className="relative border-s border-secondary dark:border-gray-700">
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="mb-10 ms-10"
+                >
+                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <img src={harisenin} alt="Harisenin logo" />
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    Harisenin.com
+                    <span className="bg-headings text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-headings dark:text-white ms-3">
+                      Latest
+                    </span>
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Fullstack Developer Bootcamp | Dec, 2023 - May, 2024
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>Student with highest achiever GPA score</li>
+                    <li>Become most active student</li>
+                    <li>
+                      Best group for final project award as PIC / leader team
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="mb-10 ms-10"
+                >
+                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <img src={iconplus} alt="Iconplus logo" />
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    PLN IconPlus
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Software Maintenance and Application Development | May -
+                    Jul, 2023
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>
+                      Developed websites for complaints and help requests for 14
+                      services that integrated with machine learning.
+                    </li>
+                    <li>
+                      Researched the tech stack for the Kominfo big data
+                      project.
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="mb-10 ms-10"
+                >
+                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <svg
+                      viewBox="0 0 512 512"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      className="text-white"
+                    >
+                      <g id="SVGRepo_iconCarrier">
+                        <title>work-case</title>
+                        <g id="Page-1" stroke="none" fill="none">
+                          <g
+                            id="Combined-Shape"
+                            fill="currentColor"
+                            transform="translate(42.666667, 64.000000)"
+                          >
+                            <path d="M277.333333,1.42108547e-14 L298.666667,21.3333333 L298.666,64 L426.666667,64 L426.666667,362.666667 L3.55271368e-14,362.666667 L3.55271368e-14,64 L128,64 L128,21.3333333 L149.333333,1.42108547e-14 L277.333333,1.42108547e-14 Z M42.6664912,220.935181 L42.6666667,320 L384,320 L384.000468,220.935097 C341.375319,233.130501 298.701692,240.759085 256.000479,243.809455 L256,277.333333 L170.666667,277.333333 L170.666323,243.809465 C127.965163,240.759108 85.2915887,233.130549 42.6664912,220.935181 Z M384,106.666667 L42.6666667,106.666667 L42.6668606,176.433085 C99.6386775,193.933257 156.507113,202.666667 213.333333,202.666667 C270.159803,202.666667 327.028489,193.933181 384.000558,176.432854 L384,106.666667 Z M256,42.6666667 L170.666667,42.6666667 L170.666667,64 L256,64 L256,42.6666667 Z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    Python Class Tutor
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Freelance | Mar - Apr, 2023
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>
+                      Became a tutor and manager of learning the basics of
+                      python programming with online meet facility, learning
+                      videos, assignments and source code.
+                    </li>
+                    <li>
+                      video Playlist :{" "}
+                      <a
+                        className="text-secondary hover:underline"
+                        href="https://www.youtube.com/playlist?list=PLjd3ym4j8YN1lJB7H173ns9HRol1SMSXm "
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Youtube
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="ms-10"
+                >
+                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <img src={ui} alt="Universitas Indonesia logo" />
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    University of Indonesia
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Professional Program in Information of Technology for
+                    Economics | Aug, 2021 – Nov, 2023
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>
+                      Thesis: Website for PT. Iconplus service complaints with
+                      urgency classification using K-Nearest Neighbors (KNN)
+                      algorithm
+                    </li>
+                    <li>
+                      Student with the 2nd highest GPA in the field of study
+                    </li>
+                  </ul>
+                </li>
+              </ol>
             </div>
           </section>
         </Element>
@@ -254,12 +392,12 @@ Based in Jakarta, Indonesia"
                 <Card
                   aos="zoom-out-up"
                   delay="200"
-                  name="Foodo API"
-                  thumbnail={foodobackend}
-                  tech={techWebFoodoBackend}
-                  paragraph="Backend API for foodo website"
+                  name="Foodo Website"
+                  thumbnail={foodoweb}
+                  tech={techWebFoodo}
+                  paragraph="A website both front-end and back-end about food recipes with a recipe ordering feature"
                   width={width}
-                  githubLink="https://github.com/IbrhmSptra/FoodoWeb-Backend"
+                  githubLink="https://github.com/HSBC-Kelompok-1/React-FrontEnd"
                 />
                 <Card
                   aos="zoom-out-up"

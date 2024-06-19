@@ -9,6 +9,8 @@ import CIconplus from "../assets/img/certificate/c-Iconplus.png";
 import CRevou from "../assets/img/certificate/c-Revou.png";
 import CUX from "../assets/img/certificate/c-UX.png";
 import Niit from "../assets/img/certificate/NIIT-Cert.jpg";
+import CAHarisenin from "../assets/img/certificate/c-AwardHS.png";
+import CCHarisenin from "../assets/img/certificate/c-CompletionHS.png";
 
 const Certificates = () => {
   return (
@@ -34,6 +36,20 @@ const Certificates = () => {
           className="h-full w-full object-cover"
           src={CFCC}
           alt="Sertif-FCC"
+        />
+        <img
+          data-aos="zoom-out-up"
+          data-aos-delay="200"
+          className="h-full w-full object-cover"
+          src={CCHarisenin}
+          alt="Sertif-Award Harisenin"
+        />
+        <img
+          data-aos="zoom-out-up"
+          data-aos-delay="200"
+          className="h-full w-full object-cover"
+          src={CAHarisenin}
+          alt="Sertif-Completion Harisenin"
         />
         <img
           data-aos="zoom-out-up"
