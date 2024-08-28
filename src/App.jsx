@@ -245,7 +245,7 @@ Based in Jakarta, Indonesia"
                     <img src={Mandiri} alt="Bank Mandiri logo" />
                   </span>
                   <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
-                    PT Bank Mandiri (Persero) Tbk.
+                    Bank Mandiri (Persero) Tbk.
                     <span className="bg-headings text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-headings dark:text-white ms-3">
                       Current
                     </span>
