@@ -32,6 +32,7 @@ import foodoweb from "./assets/img/project/foodo-web.png";
 import harisenin from "./assets/img/Harisenin.png";
 import ui from "./assets/img/Ui.png";
 import iconplus from "./assets/img/IconPlus.png";
+import Mandiri from "./assets/img/Mandiri.png";
 
 import Android from "../src/assets/img/tech-logo/android.png";
 import bootstrap from "../src/assets/img/tech-logo/bootstrap.png";
@@ -157,7 +158,7 @@ function App() {
                     aos="fade-up"
                     dur="500"
                     delay="400"
-                    text="Front-End Developer"
+                    text="Software Quality Assurance"
                   />
                   <Paragraph
                     aos="fade-up"
@@ -196,7 +197,7 @@ function App() {
                 className="max-w-[168px] m-auto rounded-md overflow-hidden mt-5 sm:max-w-fit sm:mt-0"
               >
                 <img
-                  className="sm:h-[500px] object-cover "
+                  className="sm:h-[600px] object-cover "
                   src={AboutImg}
                   alt="About Image"
                 />
@@ -213,7 +214,7 @@ function App() {
                   aos="fade-up"
                   dur="500"
                   delay="300"
-                  text="A Dedicated Front-End Developer
+                  text="A Dedicated Software Quality Assurance
 Based in Jakarta, Indonesia"
                   custom="mt-7 sm:mt-3"
                 />
@@ -221,7 +222,7 @@ Based in Jakarta, Indonesia"
                   aos="fade-up"
                   dur="500"
                   delay="400"
-                  text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Graduated from Harisenin Full-Stack Developer Bootcamp. Experienced in software maintenance and application development at PLN Iconplus and also involved in big data projects for Kominfo and Director General of Immigrants. Have the necessary skills of a front-end developer such as HTML, CSS, Javascript, Tailwind, React, Redux, Nextjs, Figma and and also fundamental of backend."
+                  text="Certified professional program Information of Technology for Economics at CCIT Faculty of Engineering University of Indonesia. Certified as a programmer from BNSP and LSPUI. Graduated from Harisenin Full-Stack Developer Bootcamp. Experienced in software maintenance and application development at PLN Iconplus. Currently, I am working as Software Quality Assurance at PT Bank Mandiri to analyze and test NBDS (New Branch Delivery System) and Smart Branch Development. Have the necessary skills of a fullstack developer such as HTML, CSS, Javascript, React, Redux, Nextjs, SQL, NodeJS, ExpressJS, Prisma, Supabase, Firebase. Also have necessary skills of Quality Assurance such as creating test scenario & test case and able to perform white/black box testing"
                   custom="mt-3 sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose"
                 />
 
@@ -238,16 +239,46 @@ Based in Jakarta, Indonesia"
                 <li
                   data-aos="fade-right"
                   data-aos-duration="500"
-                  className="mb-10 ms-10"
+                  className="mb-10 ms-9"
                 >
-                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <img src={Mandiri} alt="Bank Mandiri logo" />
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    PT Bank Mandiri (Persero) Tbk.
+                    <span className="bg-headings text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-headings dark:text-white ms-3">
+                      Current
+                    </span>
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Software Quality Assurance | Jul, 2024 - Now
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>
+                      NBDS (New Branch Delivery System) and Smart Branch
+                      Development- DSG (Distribution Strategy Group)
+                    </li>
+                    <li>
+                      Create Test Scenarios & Test Cases by analyzing the
+                      business logic from UST (Jira) & UI (Figma)
+                    </li>
+                    <li>Perform UAT, Regression, Smoke Test, BVT and TVT</li>
+                    <li>
+                      Handle testing for Debit Card Maintenance (DCM) &
+                      Wholesale Banking on NBDS (Non-Perorangan)
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="mb-10 ms-9"
+                >
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
                     <img src={harisenin} alt="Harisenin logo" />
                   </span>
                   <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
                     Harisenin.com
-                    <span className="bg-headings text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-headings dark:text-white ms-3">
-                      Latest
-                    </span>
                   </h3>
                   <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
                     Fullstack Developer Bootcamp | Dec, 2023 - May, 2024
@@ -263,9 +294,9 @@ Based in Jakarta, Indonesia"
                 <li
                   data-aos="fade-right"
                   data-aos-duration="500"
-                  className="mb-10 ms-10"
+                  className="mb-10 ms-9"
                 >
-                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
                     <img src={iconplus} alt="Iconplus logo" />
                   </span>
                   <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
@@ -289,9 +320,9 @@ Based in Jakarta, Indonesia"
                 <li
                   data-aos="fade-right"
                   data-aos-duration="500"
-                  className="mb-10 ms-10"
+                  className="mb-10 ms-9"
                 >
-                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
                     <svg
                       viewBox="0 0 512 512"
                       version="1.1"
@@ -341,9 +372,9 @@ Based in Jakarta, Indonesia"
                 <li
                   data-aos="fade-right"
                   data-aos-duration="500"
-                  className="ms-10"
+                  className="ms-9"
                 >
-                  <span className="absolute flex items-center justify-center w-8 h-8 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
                     <img src={ui} alt="Universitas Indonesia logo" />
                   </span>
                   <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">

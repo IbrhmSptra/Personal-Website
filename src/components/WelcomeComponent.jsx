@@ -30,10 +30,10 @@ const WelcomeComponent = ({ darkMode }) => {
           <ReactTyped
             className="text-xl text-secondary  font-normal xl:text-2xl"
             strings={[
-              "Front-End Developer",
+              "Software Quality Assurance",
+              "Fullstack Developer",
               "Android Developer",
               "Machine Learning Enthusiast",
-              "UI Designer",
             ]}
             typeSpeed={50}
             backSpeed={10}
