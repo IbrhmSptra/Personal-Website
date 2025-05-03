@@ -33,6 +33,7 @@ import harisenin from "./assets/img/Harisenin.png";
 import ui from "./assets/img/Ui.png";
 import iconplus from "./assets/img/IconPlus.png";
 import Mandiri from "./assets/img/Mandiri.png";
+import trilogy from "./assets/img/Trilogi.png";
 
 import Android from "../src/assets/img/tech-logo/android.png";
 import bootstrap from "../src/assets/img/tech-logo/bootstrap.png";
@@ -158,14 +159,13 @@ function App() {
                     aos="fade-up"
                     dur="500"
                     delay="400"
-                    text="Software Quality Assurance"
+                    text="Software QA & Developer"
                   />
                   <Paragraph
                     aos="fade-up"
                     dur="500"
                     delay="500"
-                    text="Have experience in Web and Android development and an interest
-                in Machine Learning. Certified as a Programmer by BNSP and LSPUI"
+                    text="Software Quality Assurance at Bank Mandiri. Experienced in Software Development. Certified as a Programmer by BNSP and LSPUI"
                     custom="mt-2"
                   />
                 </div>
@@ -262,10 +262,41 @@ Based in Jakarta, Indonesia"
                       Create Test Scenarios & Test Cases by analyzing the
                       business logic from UST (Jira) & UI (Figma)
                     </li>
-                    <li>Perform UAT, Regression, Smoke Test, BVT and TVT</li>
+                    <li>
+                      Perform UAT, Regression, Smoke Test, BVT and TVT using
+                      manual and automation
+                    </li>
                     <li>
                       Handle testing for Debit Card Maintenance (DCM) &
                       Wholesale Banking on NBDS (Non-Perorangan)
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  className="mb-10 ms-9"
+                >
+                  <span className="absolute flex items-center justify-center w-10 h-10 bg-headings rounded-full -start-14 ring-8 ring-white dark:ring-dark-first dark:bg-dark-second p-1">
+                    <img src={trilogy} alt="Bank Mandiri logo" />
+                  </span>
+                  <h3 className="flex items-center mb-1 text-lg font-semibold text-headings dark:text-white">
+                    University Trilogi
+                    <span className="bg-headings text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-headings dark:text-white ms-3">
+                      Current
+                    </span>
+                  </h3>
+                  <time className="block mb-2 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                    Informatics Engineering | Aug, 2024 - Aug, 2026
+                  </time>
+                  <ul className="mb-4 ml-4 text-sm font-normal text-gray-500 dark:text-gray-400 list-disc md:text-base">
+                    <li>
+                      Continuing education with recognition of prior learning
+                      with an expected completion of approximately 2 years
+                    </li>
+                    <li>
+                      Current GPA 3.83/4.00 already graduated with 109 college
+                      credits, remaining 35 college credits
                     </li>
                   </ul>
                 </li>
